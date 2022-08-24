@@ -10,9 +10,7 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
-  - title: "Introduce"
+  - title: "Profile"
     url: "/about/"
   - title: "Category"
     url: "/categories/"
-  - title: "Tag"
-    url: "/tags/"
