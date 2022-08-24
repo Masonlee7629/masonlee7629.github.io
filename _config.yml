@@ -12,13 +12,13 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "default", "neon", "mint", "plum", "sunrise" # 전체 블로그 색감
+minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "default", "neon", "mint", "plum", "sunrise" # 전체 블로그 색감
 
 # Site Settings
 locale                   : "ko-KR" # 블로그 주요 언어
 title                    : "Mason's Blog" # 사이트 탭에서 보이는 이름
 title_separator          : "-"
-subtitle                 : # 화면 title 하단의 소제목
+subtitle                 : "version 1.0" # 화면 title 하단의 소제목
 name                     : "이대겸(Mason Lee)" # 화면 하단 영역 이름
 description              : "Mason's Blog"
 url                      : "https://mmistakes.github.io" # 현재 블로그 url
