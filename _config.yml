@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "이대겸(Mason Lee)" # 이름 영역
   avatar           : # 프로필 사진 경로 ex) "/assets/images/bio-photo.jpg"
-  bio              : "**Backend Developer**<br>블로그 생활화 프로젝트" # 자기소개, 줄바꿈 : <br>,  굵은 글씨 : **글씨**
+  bio              : "**Backend Developer**<br>블로그 생활화 프로젝트<br>블로그 커스터마이징 ing" # 자기소개, 줄바꿈 : <br>,  굵은 글씨 : **글씨**
   location         : "Republic of Korea" # 지역 표기
   email            : # 이메일 주소 (links에서 작성 가능)
   links:
