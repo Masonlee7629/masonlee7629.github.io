@@ -7,3 +7,15 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+/** Noto Sans KR 폰트 적용 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&display=swap');
+
+.messagebox{
+  position: relative;
+  padding: 1em;
+  background-color: #364463;
+  font-size: 0.7em !important;
+  line-height: 1.8;
+  border-radius: 4px;
+}
