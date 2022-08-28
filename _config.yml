@@ -27,6 +27,7 @@ repository               : "https://github.com/Masonlee7629/masonlee7629.github.
 teaser                   : # 폴백 시 보일 이미지로 "/assets/images/"로 연결
 logo                     : # 화면에 보여지는 logo 이미지로 "/assets/images"로 세팅
 masthead_title           : "Mason's Blog" # 사이트 타이틀 영역
+future                   : true
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
