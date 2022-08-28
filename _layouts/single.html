@@ -1,5 +1,6 @@
 ---
 layout: default
+classes: wide
 ---
 
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
@@ -30,10 +31,21 @@ layout: default
     <div class="page__inner-wrap">
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header>
-          {% if page.title %}<h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="{{ page.url | absolute_url }}" class="u-url" itemprop="url">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</a>
-          </h1>{% endif %}
-          {% include page__meta.html %}
+          {% if page.title %}<h1 id="page-title" class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
+          {% if page.last_modified_at and page.date %}
+            <p class="page__meta"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y.%m.%d" }}</time>&nbsp&nbsp&nbsp<strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ "Updated:" }}</strong> <time datetime="{{ page.last_modified_at | date: date_to_xmlschema }}">{{ page.last_modified_at | date: "%Y.%m.%d" }}</time></p>
+          {% elsif page.date %}
+            <p class="page__meta"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y.%m.%d" }}</time></p>
+          {% elsif page.last_modified_at %}
+            <p class="page__meta"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ "Updated:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y.%m.%d" }}</time></p>
+          {% endif %}
+          {% if site.category_archive.type and page.categories[0] and site.tag_archive.type and page.tags[0] %}
+            {% include category-list.html %}{% include tag-list.html %}
+          {% elsif site.category_archive.type and page.categories[0] %}
+            {% include category-list.html %}
+          {% elsif site.tag_archive.type and page.tags[0] %}
+            {% include tag-list.html %} 
+          {% endif %}
         </header>
       {% endunless %}
 
@@ -48,19 +60,23 @@ layout: default
         {% endif %}
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
+
+        <p></p>
+        <h4 class="page__meta-title"><span style="font-family:'Noto Sans KR'; color:#F05A28;">{{ page.categories[0] }}</span> <span style="font-family:'Noto Sans KR';">카테고리 내 다른 글 보러가기</span></h4>
+        {% include post_pagination.html %}
+        <p></p>
       </section>
 
       <footer class="page__meta">
         {% if site.data.ui-text[site.locale].meta_label %}
           <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
         {% endif %}
-        {% include page__taxonomy.html %}
-        {% include page__date.html %}
+
       </footer>
 
       <!-- {% if page.share %}{% include social-share.html %}{% endif %} -->
 
-      {% include post_pagination.html %}
+      <!-- {% include post_pagination.html %} -->
     </div>
 
     {% if jekyll.environment == 'production' and site.comments.provider and page.comments %}
@@ -70,20 +86,18 @@ layout: default
 
   {% comment %}<!-- only show related on a post page when `related: true` -->{% endcomment %}
   {% if page.id and page.related and site.related_posts.size > 0 %}
-    <div class="page__related">
-      <h2 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h2>
-      <div class="grid__wrapper">
-        {% for post in site.related_posts limit:4 %}
-          {% include archive-single.html type="grid" %}
+    <div class="page__related"> <!--site.data.ui-text[site.locale].related_label-->
+      <h4 class="page__related-title">{{ "최근 포스팅 5 개" }}</h4>
+        {% for post in site.related_posts limit:5 %}
+          {% include archive-single2.html %}
         {% endfor %}
-      </div>
     </div>
   {% comment %}<!-- otherwise show recent posts if no related when `related: true` -->{% endcomment %}
   {% elsif page.id and page.related %}
     <div class="page__related">
-      <h2 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h2>
+      <h2 class="page__related-title">{{ "최근 포스팅"}}</h2>
       <div class="grid__wrapper">
-        {% for post in site.posts limit:4 %}
+        {% for post in site.posts limit:3 %}
           {% if post.id == page.id %}
             {% continue %}
           {% endif %}

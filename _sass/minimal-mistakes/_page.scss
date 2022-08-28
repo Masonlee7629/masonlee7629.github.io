@@ -298,7 +298,7 @@ body {
    ========================================================================== */
 
 .page__meta {
-  margin-top: 2em;
+  margin-top: 0em;
   color: $muted-text-color;
   font-family: $sans-serif;
   font-size: $type-size-6;
@@ -329,6 +329,9 @@ body {
    ========================================================================== */
 
 .page__taxonomy {
+  margin: 0px;
+  font-size: 0.75em;
+
   .sep {
     display: none;
   }
@@ -419,6 +422,15 @@ body {
   text-transform: uppercase;
   text-align: right;
   text-decoration: none;
+}
+
+/*
+   Page Date
+   ========================================================================== */
+
+.page__date {
+  margin: 0 0 1em 0;
+  font-size: 0.75em;
 }
 
 /*
@@ -526,7 +538,7 @@ body {
 .page__related {
   @include clearfix();
   float: left;
-  margin-top: 2em;
+  margin-top: 1.3em;
   padding-top: 1em;
   border-top: 1px solid $border-color;
 
@@ -546,6 +558,7 @@ body {
 }
 
 .page__related-title {
+  margin-top: 0;
   margin-bottom: 10px;
   font-size: $type-size-6;
   text-transform: uppercase;

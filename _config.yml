@@ -287,9 +287,10 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments:  true
       share: true
       related: true
+      sidebar_main: true
 
   # _pages                      : 해당 하단 영역이 새로 추가
   - scope:
