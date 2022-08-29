@@ -12,7 +12,6 @@ layouts_gallery:
   - url: /assets/images/mm-layout-archive.png
     image_path: /assets/images/mm-layout-archive.png
     alt: "archive layout example"
-last_modified_at: 2022-05-27T11:59:26-04:00
 toc: false # 목차 (클릭 시 화면이동 가능)
 toc_sticky: true
 toc_label: "On This Page"
