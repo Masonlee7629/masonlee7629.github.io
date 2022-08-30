@@ -116,6 +116,14 @@ body {
     font-size: 1em;
   }
 
+
+  /*
+   Customizing Definition list - 2022-08-30
+   ========================================================================== */
+  dl { // 추가
+    margin-top: 0;
+  }
+
   /* paragraph indents */
   p {
     margin: 0 0 $indent-var;
@@ -157,6 +165,13 @@ body {
     margin-top: 1em;
     font-family: $sans-serif;
     font-weight: bold;
+  }
+  
+  /*
+   Customizing Definition list - 2022-08-30
+   ========================================================================== */
+  dt:first-child { // 추가
+    margin-top: 0;
   }
 
   dd {
