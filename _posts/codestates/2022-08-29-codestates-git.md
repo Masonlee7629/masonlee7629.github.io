@@ -40,8 +40,9 @@ Github  : Git이 설치되어 있는 클라우드 저장소<br>
 ### <span style="color:#F05A28">**Git을 이용한 기본 Workflow**<span>
 <br>
 
+Git을 이용한 버전 관리 기능의 전체적인 흐름은 다음과 같다.
 
-1. Remote의 다른 Repository에서 Fork하여 Remote의 내 Repository에 가져온다
+1. Remote의 다른 Repository에서 Fork하여 Remote의 내 Repository에 가져온다.
 2. 내 PC로 clone하여 해당 코드를 가져와 수정한다.
 3. 내 pc의 작업공간(Work space)에서 작업한 파일을 add 한다.
 4. add한 파일에 대한 내역을 commit한다.
