@@ -413,12 +413,104 @@ NOT 연산자(!)
 
 ---
 
+### <span style="color:#F05A28">**콘솔 입출력(I/O)**<span>
+<br>
+
+프로그래밍을 하면서 변수가 담긴 값을 확인해야할 때 콘솔에 출력할 수 있다.
+
+
+출력하기 : System.out.print()
+
+```java
+// 소괄호 안의 내용을 출력하고 줄바꿈을 하지 않는다.
+System.out.print("Hello Mason");
+System.out.print("Mason" + "Lee");
+System.out.print(3 + 8);
+System.out.print(2022 + "Year");
+```
+
 
 <br>
+
+출력하고 줄 바꾸기 : System.out.prinln()
+
+```java
+// 소괄호 안의 내용을 출력하고 줄바꿈을 한다.
+System.out.println("Hello Mason");
+System.out.println("Mason" + "Lee");
+System.out.println(3 + 8);
+System.out.println(2022 + "Year");
+```
+
+
+<br>
+
+형식대로 출력하기 : System.out.prinf()
+
+
+|지시자|출력 포맷|
+|:---:|:---:|
+|%d|불리언|
+|%b|10진수|
+|%o|8진수|
+|%x, %X|16진수|
+|%c|문자|
+|%s|문자열|
+|%n|줄바꿈|
+
+
+```java
+// 소괄호 안의 지시자 형식에 맞춰 내용을 출력한다.
+System.out.printf("%s%n", "Hello Mason");
+System.out.printf("%s%n", "Mason" + "Lee");
+System.out.printf("&d&n", 3 + 8);
+System.out.printf("올해는 %s 입니다.", 2022 + "Year");
+System.out.printf("제 이름은 %s%s입니다.", "Mason", "Lee");
+```
+
+
+<br>
+
+컴퓨터는 데이터를 입력 받아 어떤 처리를 수행하고 그것을 저장하거나 출력하는 전자 장치이다.
+
+
+데이터를 입력받는 순서는 아래와 같다.
+
+
+1. import java.util.Scanner;
+: Scanner는 데이터를 입력받는 기능을 작은 프로그램으로 만들어둔 것이다.<br>
+Scanner는 java.util이란 위치에 저장되어 있고 사용하려면 작성 중인 소스코드 안으로 Scanner를 불러와야 한다.<br>
+해당 import java.util.Scanner; 코드는 ‘java.util에 있는 Scanner를 이 소스 코드로 불러와라’라는 의미이다.
+2. Scanner scanner = new Scanner(System.in);
+: Scanner 클래스의 데이터 입력 기능은 Scanner 클래스를 통해 만든 객체에 존재한다. 따라서 데이터 입력 기능을
+ 사용하려면 Scanner 클래스로 객체를 생성해야 한다.<br>
+ 클래스로 객체를 생성할 때는 new 연산자를 사용하고 해당 결과물을 인스턴스라고 한다.<br>
+ 따라서 해당 코드는 불러온 Scanner 클래스를 new 연산자를 통해 인스턴스를 생성하고, 생성된 인스턴스를 
+ 변수 scanner에 할당하는 코드이다.
+3. String inputValue = scanner.nextLine();
+: Scanner클래스를 인스턴스화한 scanner에는 nextLine()이란 메서드가 있다. 해당 메서드는 콘솔을 통해 
+문자열 데이트를 입력 받는 기능을 수행한다.<br>
+따라서 해당 코드는 문자열을 입력받기 위한 코드로 입력받은 문자열은 inputValue라는 변수에 할당되어 저장된다.<br>
+추가적으로 정수형을 입력받는 nextInt(), 실수형을 입력받는 nextFloat() 등의 메서드도 존재한다.
+
+
+```java
+import java.util.Scanner;                   // Scanner 클래스를 가져온다.
+
+Scanner scanner = new Scanner(System.in);   // Scanner 클래스의 인스턴스를 생성한다.
+String inputValue = scanner.nextLine();     // 입력한 내용이 inputValue에 저장된다.
+
+System.out.println(inputValue);             // 입력한 문자열이 출력된다.
+```
+
+
+<br>
+
+---
+
 String 클래스의 메서드는 추후 일괄적으로 포스팅할 계획입니다.<br>
 학습량은 모두 포스팅하기에 시간이 빠듯하네요.<br>
 그래도 꾸준히 활동할 수 있도록 노력하겠습니다. :)
-
 <br>
 
 ---
