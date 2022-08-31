@@ -3,7 +3,7 @@ title : "[Git] 기초"
 
 categories:
   - CodeStates
-
+excerpt: "Git의 기초와 사용법 및 명령어"
 tags:
   - [CodeStates, Git, TIL]
 

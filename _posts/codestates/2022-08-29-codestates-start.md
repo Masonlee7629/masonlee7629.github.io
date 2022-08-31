@@ -3,7 +3,7 @@ title : "코드스테이츠 백엔드 부트캠트 08.19 ~ 08.26"
 
 categories:
   - CodeStates
-
+excerpt: "코드스테이츠 백엔드 부트캠프 1주차 감상"
 tags:
   - [CodeStates]
 

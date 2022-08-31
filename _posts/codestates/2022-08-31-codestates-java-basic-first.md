@@ -3,7 +3,7 @@ title : "[Java] 기초 -1"
 
 categories:
   - CodeStates
-
+excerpt: "Java의 개요, 특징, 변수와 타입, 문자열, 연산자, 콘솔 입출력"
 tags:
   - [CodeStates, Java, TIL]
 
