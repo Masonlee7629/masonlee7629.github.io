@@ -10,8 +10,8 @@ tags:
 toc: true
 toc_sticky: true
 
-date: 2022-09-03
-last_modified_at: 2022-09-03
+date: 2022-09-05
+last_modified_at: 2022-09-05
 ---
 
 ## <span style="color:#F05A28">**Java의 생성자**<span>
