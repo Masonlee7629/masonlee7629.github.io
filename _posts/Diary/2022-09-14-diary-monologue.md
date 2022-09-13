@@ -1,5 +1,5 @@
 ---
-title : "의식의 흐름을 나눠요"
+title : "의식의 흐름을 나눠요 - 22.09.14"
 
 categories:
   - Diary
