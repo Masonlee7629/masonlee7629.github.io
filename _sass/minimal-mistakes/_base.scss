@@ -79,6 +79,17 @@ h3 + p {
   color: mix(#fff, $primary-color, 25%);
 }
 
+/* ==========================================================================
+    Post Section 내 h2, h4 color 수정 - 2022-09-15
+   ========================================================================== */
+.page__content > h2 {
+    color: #F05A28;
+}
+
+.page__content > h4 {
+  color: mix(#fff, $primary-color, 60%);
+}
+
 small,
 .small {
   font-size: $type-size-6;
