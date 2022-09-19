@@ -7,11 +7,11 @@ excerpt: "Section 1 회고"
 tags:
   - [TIL]
 
-toc: true
+toc: false
 toc_sticky: true
 
-date: 2022-09-17
-last_modified_at: 2022-09-17
+date: 2022-09-20
+last_modified_at: 2022-09-20
 ---
 
 ### 코드스테이츠 백엔드 부트캠프 Section 1 회고
