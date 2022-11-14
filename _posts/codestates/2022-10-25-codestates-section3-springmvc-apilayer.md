@@ -1,5 +1,5 @@
 ---
-title : "코드스테이츠 학습일지 - 2022-10-20"
+title : "코드스테이츠 학습일지 - 2022-10-20 part 1"
 
 categories:
   - CodeStates
