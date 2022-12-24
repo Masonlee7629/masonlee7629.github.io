@@ -32,8 +32,8 @@
             </ul>
             <ul>
               {% for category in site.categories %}
-                  {% if category[0] == "Java" %}
-                      <li><a href="/categories/errorandsolution" class="">Error & Solution ({{category[1].size}})</a></li>
+                  {% if category[0] == "Error & Solution" %}
+                      <li><a href="/categories/error" class="">Error & Solution ({{category[1].size}})</a></li>
                   {% endif %}
               {% endfor %}
             </ul>
