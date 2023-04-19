@@ -70,6 +70,17 @@ about_content: | # this will include new lines to allow paragraphs
 #    - Images ![alt text](/images/landscape-trees.jpg "Trees")
 
 content:
+  - title: Stack
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top-middle
+        border: weak  # Value of `weak` will display a weak border below this item. # Any
+        # other value (or no value) means no border will be displayed
+        description: | # this will include new lines to allow paragraphs
+          <center style= "font-size:16px">[<span style= "font-weight:bold">프로그래밍 언어</span>]    Java</center>
+          <center style= "font-size:16px">[<span style= "font-weight:bold">프레임워크 & 라이브러리</span>]    SpringBoot, Spring MVC, Spring Data JPA</center>
+          <center style= "font-size:16px">[<span style= "font-weight:bold">DB & 서버</span>]    MySQL</center>
+          <center style= "font-size:16px">[<span style= "font-weight:bold">Others</span>]    Git, Postman, Notion</center>
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
@@ -77,7 +88,7 @@ content:
         border: weak  # Value of `weak` will display a weak border below this item. # Any 
                       # other value (or no value) means no border will be displayed
         title: 티타임
-#        sub_title: 그룹 심리상담 애플리케이션
+        sub_title: 코드스테이츠 파이널 프로젝트(6인/4주)
         caption: 2022.12 ~ 2023.02
         link: http://project-teatime-dev.s3-website.ap-northeast-2.amazonaws.com/
         link_text: 프로젝트 링크
