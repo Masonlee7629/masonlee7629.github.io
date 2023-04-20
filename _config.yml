@@ -52,7 +52,7 @@ additional_links:
 # about_title: About Me (Use this to override about section title)
 about_profile_image: images/profile/gyeoms.jpg
 about_content: | # this will include new lines to allow paragraphs
-  안녕하세요. SpringBoot 를 활용한 Wep 개발이 가능한 백엔드 개발자 이대겸입니다.
+  안녕하세요. SpringBoot를 활용한 Wep 개발이 가능한 백엔드 개발자 이대겸입니다.
   <br>
   <br>
   6개월 동안 물류 스타트업에서 퍼블리싱 업무를 맡았으며, 그 후, 1년 6개월 동안 온라인 교육용 콘텐츠 유통사에서 콘텐츠 포팅 및 유통 업무를 담당하여 근무한 경력이 있습니다.
@@ -60,9 +60,10 @@ about_content: | # this will include new lines to allow paragraphs
   <br>
   개인적으로 서버와 데이터 처리 등에 대한 관심을 갖게 되어 백엔드 개발자로 직무 변경을 원하고 있었고, 일을 하며 독학으로 개발 관련 공부를 하던 중 한계를 느꼈고, 
   공부의 방향성에 대한 의문을 해소할 수 없어서 퇴사 후, 코드스테이츠의 백엔드 부트캠프를 학습 및 수료하게 되었습니다.<br>
-  수료 이후엔 SpringBoot, 알고리즘, 자료구조 등 각종 개발 지식과 정보처리기사 자격증 취득을 위해 블로깅하며 학습 중입니다.
+  수료 이후엔 SpringBoot, 알고리즘, 자료구조 등 각종 개발 지식과 정보처리기사 자격증 취득을 위해 [블로그](https://masonlee7629.tistory.com/)를 작성하며 학습 중입니다.
   <br>
   <br>
+
 #  You can even add paragraphs by using empty lines like this and add anything else [markdown](https://www.markdownguide.org/getting-started#what-is-markdown) supports such as
 #    - Lists
 #    - Tables
@@ -77,10 +78,10 @@ content:
         border: weak  # Value of `weak` will display a weak border below this item. # Any
         # other value (or no value) means no border will be displayed
         description: | # this will include new lines to allow paragraphs
-          <center style= "font-size:16px">[<span style= "font-weight:bold">프로그래밍 언어</span>]    Java</center>
-          <center style= "font-size:16px">[<span style= "font-weight:bold">프레임워크 & 라이브러리</span>]    SpringBoot, Spring MVC, Spring Data JPA</center>
-          <center style= "font-size:16px">[<span style= "font-weight:bold">DB & 서버</span>]    MySQL</center>
-          <center style= "font-size:16px">[<span style= "font-weight:bold">Others</span>]    Git, Postman, Notion</center>
+          <center style= "font-size:16px">[프로그래밍 언어] Java</center>
+          <center style= "font-size:16px">[프레임워크 & 라이브러리] SpringBoot, Spring MVC, Spring Data JPA</center>
+          <center style= "font-size:16px">[DB & 서버] MySQL</center>
+          <center style= "font-size:16px">[Others] Git, Postman, Notion</center>
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
@@ -92,10 +93,10 @@ content:
         caption: 2022.12 ~ 2023.02
         link: http://project-teatime-dev.s3-website.ap-northeast-2.amazonaws.com/
         link_text: 프로젝트 링크
-#        additional_links:
-#          - title:  Github page for project (eg. sproogen/modern-resume-theme)
-#            icon: fab fa-github
-#            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+        additional_links:
+          - title:  깃허브 페이지
+            icon: fab fa-github
+            url: https://github.com/codestates-seb/seb41_main_011
 #          - title:  Github page for project (eg. sproogen/modern-resume-theme)
 #            icon: fab fa-github
 #            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
