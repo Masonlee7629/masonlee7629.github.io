@@ -63,7 +63,15 @@ about_content: | # this will include new lines to allow paragraphs
   수료 이후엔 SpringBoot, 알고리즘, 자료구조 등 각종 개발 지식과 정보처리기사 자격증 취득을 위해 [블로그](https://masonlee7629.tistory.com/)를 작성하며 학습 중입니다.
   <br>
   <br>
-
+  오랜 시간을 독학으로 개발 공부를 했던 만큼 꾸준함을 지니고 있으며, 새로운 것을 받아들이는 데 거부감이 없습니다.<br>
+  또한, 실패하는 것을 두려워하지 않고, 과정 자체를 중시합니다. 시행착오를 겪으며 문제를 해결하는 과정에서 습득되는 지식이 무엇보다 머리 속에 잘 남고, 그것이 온전한 스스로의 경험이 되어 
+  개발자라는 직업의 기반을 다져줄 것이란 걸 확신합니다.
+  <br>
+  <br>
+  이전 직장 생활로 인해 업무 프로세스를 빠르게 파악하고 적응할 수 있으며, 업무 중 소통 오류을 줄이고, 업무 진척도 체크를 위해 기록하는 습관이 생겼습니다.
+  <br>
+  <br>
+  이런 강점들을 발판으로 제 몫을 해내는 개발자로 커리어를 쌓아가는 것이 궁극적인 목표입니다.
 #  You can even add paragraphs by using empty lines like this and add anything else [markdown](https://www.markdownguide.org/getting-started#what-is-markdown) supports such as
 #    - Lists
 #    - Tables
@@ -82,6 +90,8 @@ content:
           <center style= "font-size:16px">[프레임워크 & 라이브러리] SpringBoot, Spring MVC, Spring Data JPA</center>
           <center style= "font-size:16px">[DB & 서버] MySQL</center>
           <center style= "font-size:16px">[Others] Git, Postman, Notion</center>
+          <br>
+          <br>
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
@@ -103,9 +113,13 @@ content:
         quote: >
           그룹 심리상담 어플리케이션
         description: | # this will include new lines to allow paragraphs
-          <center style= "font-size:16px">Java, SpringBoot, Spring Data JPA를 활용하여 애플리케이션의 핵심 비즈니스 로직인 프로그램과 예약(결제) 도메인을 당담했습니다.</center>
+          <center style= "font-size:16px">부트캠프에서 진행한 메인 프로젝트로 정신 질환을 앓고 있는 사람들에게 대면 상담 치료의 심적 부담감과 높은 비용으로 인한 경제적 부담감을
+          줄일 수 있는 서비스를 제공하기 위해 기획하게 되었습니다.</center>
           <br>
-          <center style= "font-size:16px">text</center>
+          <center style= "font-size:16px">프로젝트 당시 기능 구현 자체 관심이 많아 서비스의 핵심 비즈니스 로직인 상담 프로그램, 예약과 
+          관련된 기본적인 CRUD 기능과 Spring Data JPA를 이용한 검색 기능을 담당했습니다.</center>
+          <br>
+          <br>
   - title: Experience
     layout: list
     content:
@@ -129,6 +143,8 @@ content:
         caption: 2018.01 ~ 2019.02
         description: | # this will include new lines to allow paragraphs
           <center style= "font-size:16px">부동산 분양 기획, 홍보 및 계약 관리</center>
+          <br>
+          <br>
   - title: Education
     layout: list
     content:
